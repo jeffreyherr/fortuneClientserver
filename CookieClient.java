@@ -19,10 +19,7 @@ public class CookieClient {
 			System.out.println("Connecting to " + theHost + ": " + portNo);
 			InputStream theInput = theSocket.getInputStream();
 			System.out.println("Connection established");
-			//ArrayList <Byte> bytes = new ArrayList<Byte>();
-			//while() {
-			//  theInput.read
-			//}
+
 			byte [] toGetSize = new byte[1000];
 			int size = theInput.read(toGetSize);
 			byte [] msgBytes = new byte[size+1];
